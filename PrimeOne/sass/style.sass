@@ -78,13 +78,12 @@ body
 
 header
 	max-width: 1366px 
-	max-height: 175px 
-	margin-bottom: 30px
+	min-height: 175px 
 	.header_wrapper
 		display: flex
 		justify-content: space-between
 		align-items: top
-		padding: 33px 0
+		padding-top: 10px
 		.header_part1
 			width: 33.33333%
 			.lang
@@ -125,7 +124,6 @@ header
 						text-decoration: none
 						margin-right: 35px
 		.header_part2
-			width: 33.33333%
 			text-align: center
 			padding: 0
 			&_nycs
@@ -138,13 +136,14 @@ header
 				color: #000000
 				padding: 0
 				margin: 0
-				margin-bottom: 10px
+				margin-bottom: 17px
+			.logo
+				overflow: hidden
 			img
 				width: 72.28%
 				height: 32.5%
 				padding: 0
 				margin: 0
-				margin-bottom: 15px
 			&_text
 				font-family: Bebas
 				font-size: 8px
@@ -154,7 +153,6 @@ header
 				letter-spacing: 1.0em
 				color: #000000
 				padding: 0
-				margin-bottom: 33px
 		.header_part3
 			width: 33.33333%
 			text-align: right
@@ -184,13 +182,13 @@ header
 					text-decoration: none
 					margin-left: 35px
 .promo
-	height: 425px
+	min-height: 425px
 	&_wrapper
 		display: flex
 		width: 100%
-		img
+		.promo_img
 			width: 50%
-			max-height: 425px
+			height: 100%
 		.promo_block
 			width: 50%
 			max-height: 425px
@@ -234,8 +232,8 @@ header
 				letter-spacing: 0.1em
 				color: #fffffe
 .collection
-	height: 676px
-	padding-top: 80px
+	padding: 50px 0
+    min-hight: 350px
 	&_wrapper
 		display: flex
 		justify-content: center
@@ -278,12 +276,14 @@ header
 		letter-spacing: 0.1em
 		color: #000000
 .choose
-	height: 150px
+	min-height: 146px
 	&_wrapper
 		display: flex
 		width: 100%
+		height: 100%
 		&_block	
 			width: 50%
+			height: 100%
 			&_big
 				height: 100%
 				background-color: #000000
@@ -299,7 +299,7 @@ header
 		img
 			width: 50%
 .advantages
-	height: 350px
+	min-height: 350px
 	padding: 50px 0
 	background-color: #ebebeb
 	&_wrapper
@@ -339,14 +339,14 @@ header
 					font-weight: 400
 					color: #000000
 .hello
-	height: 249px
+	min-height: 249px
 	&_wrapper
 		display: flex
 		.hello_block1
 			display: flex
 			flex-direction: column
 			width: 50%
-			padding-top: 82px
+			padding-top: 70px
 			padding-bottom: 24px
 			padding-right: 5px
 			&_big
@@ -383,7 +383,7 @@ header
 			display: flex
 			flex-direction: column
 			width: 50%
-			padding-top: 140px
+			padding-top: 130px
 			padding-bottom: 24px
 			padding-right: 5px
 			&_email
@@ -403,11 +403,15 @@ header
 				img
 					margin-right: 27px
 .final
-	height: 475px
+	min-height: 380px
 	&_wrapper
 		display: flex
+		width: 100%
 	&_block1
 		width: 50%
+		img
+			width: 100%
+			height: 100%
 	&_block2
 		width: 50%
 		background-color: #000000
@@ -476,7 +480,7 @@ header
 			color: #000000
 footer
 	width: 100%
-	height: 126px
+	min-height: 126px
 	.footer_wrapper
 		width: 100%
 		height: 100%
@@ -484,6 +488,8 @@ footer
 		justify-content: space-around
 		align-items: center
 		.block1
+			width: 25%
+			height: 100%
 			font-family: 'PT Sans'
 			font-size: 15px
 			line-height: 25px
@@ -491,8 +497,8 @@ footer
 			color: #4d4d4d
 		.block2
 			display: inline-block
-			width: 10%	
-			height: auto
+			width: 25%
+			height: 100%
 
 @import "media"
 
